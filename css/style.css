@@ -1,0 +1,159 @@
+body{
+    background-color: #fefae0;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#283618;
+    margin: 20px 0;
+}
+
+h3{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color:#283618;
+    margin: 10px 10px;
+}   
+
+p,li{
+    line-height: 120%;
+    margin: 0 10px 0 10px;
+    font-family: Roboto,Helvetica,Arial,Nimbus Sans L,sans-serif;
+}
+
+span {
+    font-size: larger;
+    font-weight: bold;
+    font-family: Roboto,Helvetica,Arial,Nimbus Sans L,sans-serif;
+    display: block;
+    text-align: center;
+    color: #BC6C25;
+  }
+
+img{
+    border: 5px solid #dda15e;
+    width: 90%;
+    max-height: 400px;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+ul{
+    display: inline-block;
+    list-style-type:square;
+    margin-left: 50px;
+}
+
+ol{
+    display: inline-block;
+    list-style-type: lower-roman;
+    margin-left: 50px;
+}
+/* Using grid for the gallery */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*automatically have as many columns as
+     possible that are a minimum of 200px wide with each column occupying an equal fraction of the row. */
+    gap: 5px;
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-container video {
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    font-size: smaller;
+}
+/* Style the Navigation bar */
+nav{
+    text-align: end;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8d8731;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus{
+    text-decoration: underline;
+}
+
+/* Show the current page */
+nav a.active {
+    background-color: #606c38;
+    color: white;
+}
+
+/* to make skip to main content currently hidden */
+.skip a {
+    position: relative;
+    top: -40px;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip a:focus {
+    top: 20px;
+}
+
+/* to style all elements on focus*/
+:focus{
+    border:2px solid black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skip a {
+        position: relative;
+        top: -40px;
+        transition: none;
+    }
+
+    img[src*=".gif"] {
+        display: none;
+    }
+
+    video { 
+        display: none; 
+    }
+}
+
+footer{
+    margin-top: 10px;
+    font-size: small;
+    background-color: #283618;
+    color:#fefae0;
+}
+
+footer p{
+    padding: 10px;
+    margin: 0;
+}
