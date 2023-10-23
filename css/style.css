@@ -112,6 +112,7 @@ nav a:hover, nav a:focus{
 nav a.active {
     background-color: #606c38;
     color: white;
+    font-weight: bold;
 }
 
 /* to make skip to main content currently hidden */
